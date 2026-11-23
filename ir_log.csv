@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S02_ir,IR_sim,"Màu xanh áo trong S02_rgb biến mất, nhưng vùng vai và đường giữa thân vẫn thấy rõ trên ảnh mô phỏng.",person.seatbelt,Giữ not_worn vì không thấy dải dây trên vùng thân nhìn rõ.
+S03_ir,IR_sim,Cốc giữa ghế vẫn thấy thành và quai hình vòng dù mất thông tin màu từ RGB. Khóa dây cạnh cốc là vật khác.,object.type,"Gán cup theo đường bao và quai, tránh đưa khóa dây vào box."
+S08_ir,IR_sim,Áo người lớn bên trái ảnh thấy rõ hơn trong IR-sim so với ảnh RGB tối cùng cảnh.,person.seatbelt,IR-sim thấy rõ không đeo dây. V2 cũng gán not_worn cho RGB sau khi tăng sáng và kiểm độc lập khung RGB.
+D01,real_IR,Mặt cúi nghiêng. Vùng khe mí trái mờ dù vẫn thấy đường mũi và cằm.,face.eye_left,Giữ unknown vì chưa phân biệt được mí mở hay khép.
+D03,real_IR,Mắt phải nằm phía xa trên mặt nghiêng. Gọng kính lẫn với vùng mí trong ảnh hồng ngoại.,face.eye_right,Giữ unknown. Mắt trái được đánh giá riêng.
+D05,real_IR,Gọng và vùng tròng kính che hoặc làm mờ đường mí. Vẫn nhận ra kính qua gọng và tròng.,face.eye_left / face.eye_right / face.glasses,Giữ hai mắt unknown. Gán glasses=clear theo phần tròng quan sát được.

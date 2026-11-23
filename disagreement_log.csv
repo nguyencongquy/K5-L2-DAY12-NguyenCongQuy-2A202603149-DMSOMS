@@ -1,0 +1,97 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,person,seatbelt,khác giá trị (IoU=0.82),unknown,worn_correct,peer,4.7,V2 đổi thành worn_correct vì thấy dải dây từ vai xuống hông đối diện.
+D01.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.28,,,,
+D01.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+D01.png,face13,left_eye_upper.occluded,khác cờ,0,1,ambiguous,4.5–4.6,"Giữ occluded=0. V2 đưa điểm ra outside vì ảnh mờ, không định vị chắc được giữa mép mí. Giữ eye_left=unknown."
+D01.png,face13,left_eye_lower.occluded,khác cờ,0,1,ambiguous,4.5–4.6,"Giữ occluded=0. V2 đưa điểm ra outside vì ảnh mờ, không định vị chắc được giữa mép mí. Giữ eye_left=unknown."
+D01.png,face13,mouth_right.occluded,khác cờ,0,1,,,
+D01.png,face13,mouth_right.outside,khác cờ,1,0,,,
+D01.png,face13,lip_upper.occluded,khác cờ,0,1,,,
+D01.png,face13,lip_lower.occluded,khác cờ,0,1,,,
+D02.png,person,seatbelt,khác giá trị (IoU=0.67),unknown,worn_correct,mine,4.7,Giữ unknown. Cẳng tay và áo che phần dây ở hông.
+D02.png,face13,left_eye_inner.occluded,khác cờ,1,0,,,
+D02.png,face13,mouth_left.occluded,khác cờ,0,1,,,
+D02.png,face13,mouth_left.outside,khác cờ,1,0,,,
+D02.png,face13,mouth_right.occluded,khác cờ,0,1,,,
+D02.png,face13,mouth_right.outside,khác cờ,1,0,,,
+D02.png,face13,lip_upper.occluded,khác cờ,0,1,,,
+D02.png,face13,lip_upper.outside,khác cờ,1,0,,,
+D02.png,face13,lip_lower.occluded,khác cờ,0,1,,,
+D02.png,face13,lip_lower.outside,khác cờ,1,0,,,
+D03.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,peer,"4.4-5, 4.7","Hai dòng IoU thấp là cùng ca tay phải. V2 dời box hiện có sang phần tay thấy được cạnh vô lăng, vẫn để on_wheel=unknown vì vùng tiếp xúc bị che."
+D03.png,face,eye_right,khác giá trị (IoU=0.65),unknown,open,mine,4.5–4.6,Giữ eye_right=unknown vì gọng kính và góc nhìn làm mờ khe mí. V2 đặt right_eye_lower outside vì không xác định được mép mí dưới.
+D03.png,hand,on_wheel,khác giá trị (IoU=0.82),yes,no,peer,4.7,"V2 đổi tay trái thành on_wheel=no vì tay buông cạnh đùi, không chạm vô lăng."
+D03.png,person,seatbelt,khác giá trị (IoU=0.76),unknown,worn_correct,mine,4.7,Giữ unknown. Vải tối trước ngực và tay che đường đi giữa vai và hông.
+D03.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.4-5, 4.7","Hai dòng IoU thấp là cùng ca tay phải. V2 dời box hiện có sang phần tay thấy được cạnh vô lăng, vẫn để on_wheel=unknown vì vùng tiếp xúc bị che."
+D04.png,person,seatbelt,khác giá trị (IoU=0.61),unknown,worn_correct,peer,4.7,V2 đổi thành worn_correct vì thấy dải dây chéo và đoạn dây ở hông.
+D04.png,face,eye_right,khác giá trị (IoU=0.65),unknown,open,mine,4.5–4.6,Giữ eye_right=unknown do mắt phía xa nằm trong bóng. V2 đặt right_eye_upper và right_eye_lower outside vì không định vị được mép mí.
+D04.png,face,gaze_zone,khác giá trị (IoU=0.65),other,road,mine,4.5,Giữ other. Ảnh không xác định được đích nhìn là đường hoặc bảng giữa.
+D04.png,phone,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.7,"Giữ nguyên vì khi phóng ảnh vẫn chưa thấy cạnh, góc hoặc màn hình để xác định điện thoại."
+D05.png,face,eye_left,khác giá trị (IoU=0.61),unknown,open,mine,4.5–4.6,Giữ unknown vì gọng và phản xạ che đường mí. Không đủ căn cứ chọn open.
+D05.png,face,eye_right,khác giá trị (IoU=0.61),unknown,open,mine,4.5–4.6,Giữ unknown vì gọng và phản xạ che đường mí. Không đủ căn cứ chọn open.
+D05.png,face,gaze_zone,khác giá trị (IoU=0.61),other,center,mine,4.5,Giữ other. Ảnh không xác định được đích nhìn là đường hoặc bảng giữa.
+D05.png,person,seatbelt,khác giá trị (IoU=0.80),unknown,worn_correct,peer,4.7,V2 đổi thành worn_correct. Dải chéo thấy được ở hai phía chai và tới vùng hông.
+D05.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,"4.1, 4.7","Vùng box thêm của Phong chủ yếu là cẳng tay. Vô lăng che bàn tay, nên giữ số box."
+D05.png,face13,left_eye_upper.occluded,khác cờ,1,0,,,
+D05.png,face13,right_eye_inner.occluded,khác cờ,1,0,,,
+D05.png,face13,right_eye_upper.occluded,khác cờ,1,0,,,
+D06.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.37,,ambiguous,"4.4-5, 4.7","Hai box cùng vùng tay phải cạnh khóa. Giữ box hiện tại ôm phần bàn tay thấy được, mép bàn tay lẫn với dây."
+D06.png,person,seatbelt,khác giá trị (IoU=0.82),unknown,worn_correct,mine,4.7,"Giữ unknown. Tay đang giữ dây sát chốt, chưa xác định được dây đã cài."
+D06.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,"4.4-5, 4.7","Hai box cùng vùng tay phải cạnh khóa. Giữ box hiện tại ôm phần bàn tay thấy được, mép bàn tay lẫn với dây."
+D06.png,face13,left_eye_outer.outside,khác cờ,1,0,,,
+D06.png,face13,left_eye_inner.outside,khác cờ,1,0,,,
+D06.png,face13,left_eye_upper.occluded,khác cờ,0,1,,,
+D06.png,face13,left_eye_upper.outside,khác cờ,1,0,,,
+D06.png,face13,left_eye_lower.occluded,khác cờ,0,1,,,
+D06.png,face13,left_eye_lower.outside,khác cờ,1,0,,,
+D06.png,face13,mouth_right.occluded,khác cờ,0,1,,,
+D06.png,face13,mouth_right.outside,khác cờ,1,0,,,
+D06.png,face13,lip_lower.outside,khác cờ,1,0,peer,4.6,"V2 đưa lip_lower vào điểm (1020, 474) theo mép môi dưới thấy trên ảnh gốc."
+S01_ir.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S01_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S01_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S01_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S01_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S01_rgb.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S01_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S01_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S01_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S02_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S03_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_ir.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S03_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S03_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S04_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S04_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S04_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S04_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S04_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S04_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S04_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S05_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S05_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S05_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S05_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S05_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S06_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S07_ir.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S07_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S07_rgb.png,object,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S08_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S08_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S08_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S08_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
+S08_rgb.png,person,seatbelt,khác giá trị (IoU=0.96),unknown,not_worn,peer,4.7,"V2 đổi thành not_worn. Tăng sáng riêng RGB thấy rõ vùng vai và hông, không thấy dây trên người lớn."
+S08_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S08_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S08_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
