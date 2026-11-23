@@ -22,11 +22,11 @@
 | `seat` | `rear_left`, `rear_middle`, `rear_right` | Gắn cảnh báo và thiết bị an toàn với đúng chỗ ngồi. | Có dựa vào vị trí tương đối và bố cục ghế. |
 | `face` | Box mặt người lớn | Xác định vùng mặt góp phần phân biệt người với đồ vật ở ghế. | Có nếu góc mặt và độ sáng đủ để nhận ra. |
 | `person.seatbelt` | `not_worn`, `unknown` trên SVIRO | Xác định trên ghế có người khi nào đủ căn cứ đánh giá dây. | Có khi thấy rõ vùng vai và thân. SVIRO thiếu ví dụ đeo dây. |
-| `child_seat` | Box ghế trống, `seat`, `occupied=no/unknown` | Xác định ghế có thiết bị giữ trẻ để áp dụng chính sách an toàn theo ghế. | Có thể thấy thành bên, đệm và đế. |
+| `child_seat` | Box ghế trẻ em, `seat`, `occupied=no/unknown/yes` | Xác định ghế có thiết bị giữ trẻ để áp dụng chính sách an toàn theo ghế. | Có thể thấy thành bên, đệm và đế. |
 | `infant_seat` | Box nôi trống, `seat`, `facing=rear/front` | Xác định ghế có nôi và hướng đặt cho logic an toàn. | Có khi thấy vỏ nôi, tay xách hoặc hướng mở của nôi. |
 | `object` | `bag`, `box`, `cup`, `other` theo ghế | Phân biệt đồ để trên ghế với người, hạn chế cảnh báo nhầm. | Có khi đường bao và chi tiết như quai hoặc cạnh hộp còn thấy. |
 
 ## Hai câu hỏi cho người viết guideline
 
 1. **D01.png** — Khi khó phân biệt mí mở hay khép do mờ nhưng vẫn định vị được mép mí, checker có cần chấp nhận `eye_left=unknown` cùng keypoint hiện rõ không? Bản hiện tại giữ `unknown` và ghi riêng cảnh báo để đối chiếu từng điểm.
-2. **S03_ir.png** — Khi ảnh SVIRO có hình giống trẻ em trong thiết bị giữ trẻ, nên ghi nhận ca ngoại lệ bằng mã nào để phân biệt với ghế thực sự trống khi tổng hợp QC? Bản hiện tại bỏ nhãn hình và thiết bị có hình đó, giữ nhãn cốc ở ghế giữa.
+2. **S03_ir.png** — Khi ảnh SVIRO có hình giống trẻ em trong nôi có tay xách, nên ghi nhận thiết bị đó thế nào khi schema `infant_seat` chưa có trường `occupied`? Bản này gán `child_seat` có `occupied=yes` cho ghế nhìn rõ bên trái ảnh và giữ nhãn cốc ở giữa.

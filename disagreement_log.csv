@@ -62,20 +62,20 @@ S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_ir.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
-S03_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S03_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.1, 4.8; schema cập nhật",Schema coach cho phép occupied=yes. V2 thêm box child_seat ở rear_right sau khi xem ảnh gốc.
 S03_ir.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
 S03_rgb.png,infant_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
-S03_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S03_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.1, 4.8; schema cập nhật",Schema coach cho phép occupied=yes. V2 thêm box child_seat ở rear_right sau khi xem ảnh gốc.
 S03_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S03_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
-S04_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S04_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.1, 4.8; schema cập nhật",Schema coach cho phép occupied=yes. V2 thêm box child_seat ở rear_left sau khi xem ảnh gốc.
 S04_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S04_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S04_rgb.png,frame_meta,modality,khác giá trị,rgb,ir,mine,4.3,Phong đổi modality thành rgb theo hậu tố ảnh.
-S04_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,mine,3; 4.1; 4.8,Box của Phong có occupied=yes và ôm ghế có hình giống trẻ em. Bỏ box này theo phạm vi chỉ gán ghế trống và ghi ca ngoại lệ.
+S04_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,peer,"4.1, 4.8; schema cập nhật",Schema coach cho phép occupied=yes. V2 thêm box child_seat ở rear_left sau khi xem ảnh gốc.
 S04_rgb.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S04_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
 S05_ir.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,,,

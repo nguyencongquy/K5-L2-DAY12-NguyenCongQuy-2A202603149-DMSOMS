@@ -8,7 +8,7 @@ Mã bộ ảnh **G04** · Hình thức **cá nhân**
 
 Phong gửi phiếu QC cho Quý ngày 23/11/2026. Quý đối chiếu file của Phong và rà ảnh gốc để cập nhật v2. Log giữ mốc so sánh với bản gốc của Quý. Đã ghi kết quả rà cho 35/96 dòng, gồm 4 dòng mơ hồ. Các dòng còn lại để nguyên kết quả diff. Cột verdict ghi quyết định sau khi rà, chưa ghi là hai bên đồng thuận toàn bộ.
 
-Ca mơ hồ còn ghi trong log gồm cờ che khuất mí trái D01 và ranh giới box tay phải D06. Với hình giống trẻ em ở S01, S03, S04, S05 và S08, v2 áp dụng §3 và §4.1–4.8, giữ nhãn người lớn, đồ vật và ghế trẻ em trống nhìn thấy được.
+Ca mơ hồ còn ghi trong log gồm cờ che khuất mí trái D01 và ranh giới box tay phải D06. Sau cập nhật schema của coach, v2 thêm 8 box `child_seat` rõ trên S01, S03, S04 và S08 (mỗi cảnh một ảnh RGB và một ảnh IR-sim), với `occupied=yes`. Bốn kết luận về ghế S03 và S04 trong log được sửa. Các box nôi, người, mặt và đồ vật giữ nguyên.
 
 ## Cá nhân
 
