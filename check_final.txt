@@ -1,0 +1,23 @@
+File: /Users/bim/Documents/Codex/2026-11-20/https-github-com-vinuni-ai20k-k5/outputs/K5-L2-DAY12-NguyenCongQuy-2A202603149-DMSOMS/export_final.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=4, face=16, face13=6, hand=10, infant_seat=2, object=8, person=16
+  [WARN] D01.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D02.png: left_eye_outer nằm bên trái ảnh so với right_eye_outer: kiểm lại quy ước trái/phải theo người (đúng nếu mặt quay hẳn sang bên)
+  [WARN] D03.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D04.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+Kết quả: 0 lỗi, 4 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Giải thích từng cảnh báo
+
+- D01.png — eye_left=unknown. Góc cúi nghiêng và ảnh mờ ở vùng mí trái, nên chưa phân biệt được mắt mở hay khép. Bốn điểm mắt trái trong bản export đều có occluded=0 và outside=0. Cảnh báo cần đối chiếu lại cờ từng điểm nếu rà face13 (§4.5–4.6).
+- D02.png — Checker so khóe mắt theo x. Ảnh DMS xoay 90° dùng trục y. Khóe ngoài mắt trái có y=826.19, lớn hơn y=549.37 của khóe ngoài mắt phải, đúng quy ước theo người (§3, §4.6).
+- D03.png — eye_right=unknown. Mắt phải ở phía xa và đường mí lẫn với gọng kính. Không đủ rõ để xác định mở hay khép. Bốn điểm mắt phải hiện có occluded=0 và outside=0. Cảnh báo cần đối chiếu lại cờ từng điểm nếu rà face13 (§4.5–4.6).
+- D04.png — eye_right=unknown. Mắt phải ở phía xa, góc nghiêng và vùng tối khiến khe mí khó phân biệt. Bốn điểm mắt phải hiện có occluded=0 và outside=0. Cảnh báo cần đối chiếu lại cờ từng điểm nếu rà face13 (§4.5–4.6).
+
+Ghi chú gaze_zone=other theo §4.5
+
+- D02.png — Hướng nhìn thấp về vùng cánh tay hoặc ghế, khó xác định đích nhìn.
+- D03.png — Mặt hướng nhẹ sang bên, đích nhìn qua kính chưa xác định được.
+- D04.png — Mặt hơi chếch sang bên, chưa xác định được đích nhìn cụ thể.
+- D05.png — Mặt hơi cúi, có chai trước ngực, chưa đủ căn cứ để chọn vùng nhìn chuẩn.
+
+Kết quả: 0 lỗi

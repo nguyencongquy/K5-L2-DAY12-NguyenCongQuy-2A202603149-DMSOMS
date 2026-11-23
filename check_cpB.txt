@@ -1,0 +1,13 @@
+File: /Users/bim/Documents/Codex/2026-11-20/https-github-com-vinuni-ai20k-k5/outputs/K5-L2-DAY12-NguyenCongQuy-2A202603149-DMSOMS/export_final.zip · chỉ kiểm ảnh: D01, D02
+Ảnh: 2 · đã có frame_meta: 2 · số đối tượng: face=2, face13=2, hand=3, person=2
+  [WARN] D01.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D02.png: left_eye_outer nằm bên trái ảnh so với right_eye_outer: kiểm lại quy ước trái/phải theo người (đúng nếu mặt quay hẳn sang bên)
+Kết quả: 0 lỗi, 2 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Nguồn bằng chứng
+Báo cáo chạy lại trên export_final.zip của Job #26, lọc đúng 2 ảnh D01–D02. Đây là kết quả kiểm tra hồi cứu từ bản cuối.
+
+Giải thích từng cảnh báo
+
+- D01.png — Mắt trái mờ khi tài xế cúi và nghiêng, nên để eye_left=unknown. Bốn điểm mắt trái hiện có occluded=0 và outside=0. Cần rà riêng cờ điểm nếu tiếp tục kiểm face13 (§4.5–4.6).
+- D02.png — Do ảnh xoay 90°, kiểm theo trục y. Khóe ngoài mắt trái y=826.19 lớn hơn khóe ngoài mắt phải y=549.37, đúng quy ước (§4.6).
